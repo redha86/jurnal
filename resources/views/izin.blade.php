@@ -167,14 +167,16 @@
                         <!-- Left Menu Start -->
                         <ul class="metismenu list-unstyled" id="side-menu">
                            <a href="{{ url('home') }}"> <li class="menu-title">Home</li></a>
-
-                            <li>
-                                <a href="{{ url('index') }}" class="waves-effect">
-                                    <i class="mdi mdi-home"></i>
-                                    <b><span>ABSENSI</span></b>
-
-                                </a>
-                            </li>
+                           <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-email"></i>
+                                <span>ABSENSI/JURNAL</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="{{ url('index') }}">ABSEN HARIAN</a></li>
+                                <li><a href="{{ url('jurnal') }}">JURNAL HARIAN</a></li>
+                            </ul>
+                        </li>
                             <li>
                                 <a href="{{ url('izin') }}" class="waves-effect">
                                     <i class="ion ion-md-clipboard"></i>
@@ -287,7 +289,7 @@
                                             <form action="#" class="custom-validation">
 
                                                 <div class="mb-3">
-                                                    <b><label class="form-label">ALASAN IZIN</label></b>
+                                                    <b><label class="form-label">ALASAN LAIN</label></b>
                                                     <div>
                                                         <input type="text" class="form-control" required
                                                             data-parsley-minlength="255" placeholder="" />

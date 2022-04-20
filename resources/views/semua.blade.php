@@ -177,7 +177,7 @@
                                     <span>ABSENSI</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="{{ url('tampilan') }}">ABSEN HARIAN</a></li>
+                                    <li><a href="{{ url('index') }}">ABSEN HARIAN</a></li>
                                     <li><a href="{{ url('jurnal') }}">JURNAL HARIAN</a></li>
                                 </ul>
                             </li>
