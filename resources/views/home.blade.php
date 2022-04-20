@@ -234,21 +234,13 @@
                                         <div class="card-body">
 
                                             <h4 class="mb-0 font-size-18">SELAMAT DATANG</h4>
-                                            
-
-                                            
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <script>document.write(new Date().getFullYear())</script> ©  <span
-                                    class="d-none d-sm-inline-block">-SMK N 1 TAMBAKBOYO <i class="mdi mdi-heart text-primary"></i> by
-                                    @Pandawa.</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
                     </div>
-                </footer>
+                </div>        
             </div>
             <!-- end main content-->
 

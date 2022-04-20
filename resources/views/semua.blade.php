@@ -260,8 +260,8 @@
                                                         <td>menambahkan proses login disertai database</td>
                                                         <td>####</td>
                                                         <td >
-                                                            <i class="bi bi-pencil bg-primary text-light fs-4 p-1 rounded"></i>
-                                                            <i class="bi bi-trash bg-primary text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-pencil bg-success text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-trash bg-danger text-light fs-4 p-1 rounded"></i>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -271,8 +271,8 @@
                                                         <td>menambahkan fitur absen</td>
                                                         <td>##</td>
                                                         <td >
-                                                            <i class="bi bi-pencil bg-primary text-light fs-4 p-1 rounded"></i>
-                                                            <i class="bi bi-trash bg-primary text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-pencil bg-success text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-trash bg-danger text-light fs-4 p-1 rounded"></i>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -282,8 +282,8 @@
                                                         <td>Memperbaiki fitur rekap jurnal</td>
                                                         <td>##</td>
                                                         <td >
-                                                            <i class="bi bi-pencil bg-primary text-light fs-4 p-1 rounded"></i>
-                                                            <i class="bi bi-trash bg-primary text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-pencil bg-success text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-trash bg-danger text-light fs-4 p-1 rounded"></i>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -293,8 +293,8 @@
                                                         <td>menambahkan menu profil</td>
                                                         <td>###</td>
                                                         <td >
-                                                            <i class="bi bi-pencil bg-primary text-light fs-4 p-1 rounded"></i>
-                                                            <i class="bi bi-trash bg-primary text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-pencil bg-success text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-trash bg-danger text-light fs-4 p-1 rounded"></i>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -304,8 +304,8 @@
                                                         <td>Pindah ke laravel</td>
                                                         <td>##</td>
                                                         <td >
-                                                            <i class="bi bi-pencil bg-primary text-light fs-4 p-1 rounded"></i>
-                                                            <i class="bi bi-trash bg-primary text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-pencil bg-success text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-trash bg-danger text-light fs-4 p-1 rounded"></i>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -315,8 +315,8 @@
                                                         <td>memperbaiki tampilan home</td>
                                                         <td>##</td>
                                                         <td >
-                                                            <i class="bi bi-pencil bg-primary text-light fs-4 p-1 rounded"></i>
-                                                            <i class="bi bi-trash bg-primary text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-pencil bg-success text-light fs-4 p-1 rounded"></i>
+                                                            <i class="bi bi-trash bg-danger text-light fs-4 p-1 rounded"></i>
                                                         </td>
                                                     </tr>
                                                 </tbody>
