@@ -7,21 +7,12 @@ use App\Models\ProfilModel;
 
 class ProfilController extends Controller
 {   
-    public function __construct()
-    {
-        $this->ProfilModel = new ProfilModel();
-    }
-   
     public function index()
     {
-        $data = [
-            'profil' => $this->ProfilModel->allData(),
-        ];
-        return view('profil');
+        return view('tampilan/profil');
     }
-
-    public function jurnal()
+    public function profiladmin()
     {
-        return view('/jurnal');
+        return view('admin.profiladmin');
     }
 }

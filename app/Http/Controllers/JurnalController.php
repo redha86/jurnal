@@ -8,6 +8,6 @@ class JurnalController extends Controller
 {
     public function index()
     {
-        return view('jurnal');
+        return view('tampilan/jurnal');
     }
 }

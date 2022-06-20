@@ -8,6 +8,6 @@ class SemuaController extends Controller
 {
     public function index()
     {
-        return view('semua');
+        return view('tampilan/semua');
     }
 }
