@@ -74,21 +74,11 @@
             </li>
             
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-city "></i>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" >
+                    <i class="fas fa-city"></i>
                     <span>Data Perusahaan</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Pilih Perusahaan:</h6>
-                        <a class="collapse-item" href="{{ url('hummasoft') }}">HUMMASOFT</a>
-                        <a class="collapse-item" href="{{ url('axelbit') }}">AXELBIT</a>
-                        
-                    </div>
-                </div>
             </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -106,25 +96,6 @@
                     </div>
                 </div>
             </li>
-
-            <!-- Nav Item - One Collapse Menu -->
-            <li class="nav-item ">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    <i class="fas fa-archive"></i>
-                    <span>Absensi</span>
-                </a>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Data Absensi :</h6>
-                        <a class="collapse-item " href="{{ url('absensi') }}">Absensi</a>
-                        <a class="collapse-item" href="{{ url('rekapabsen') }}">Rekap Absen</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - One Collapse Menu -->
             <li class="nav-item ">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIzin" aria-expanded="true"
                     aria-controls="collapseIzin">
@@ -377,62 +348,36 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <div class="page-title">
-                        <h4 class="mb-0 font-size-18">DATA DIRI </h4>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">SMK NEGERI 1 TAMBAKBOYO</a></li>
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">UBAH PROFILE</a></li>
-                        </ol>
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Profil</h1>
                     </div>
-                    <!-- Start Page-content-Wrapper -->
-                    <div class="page-content-wrapper">
+                     <!-- Start Page-content-Wrapper -->
+                     <div class="page-content-wrapper">
                         <div class="row">
                             <div class="col-lg-12 ">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="page-content">
                                             <div class="container">
-                                            <form action="" method="post" enctype="multipart/form-data">
+                                            <form >
+                                                @foreach ($siswa as $data)
                                             <div class="row">
                                               <div class="col-2">
                                                 <img src="{{ asset('assets/images/logo-smkn-1-tby.png') }}" width="150px" class="rounded-circle center mx-auto">
-                                              </div>  
+                                              </div><br>  
                                               <div class="col-10">
-                                              <div class="input-group my-3">
-                                                <input type="file" class="form-control" id="inputGroupFile02">
+                                                <label for="basic-url" class="form-label">username</label>
+                                                <div class="col-sm-15 bg-light p-2 border">
+                                                    {{ $data->name }}
+                                                  </div><br>
+                                              <label for="basic-url" class="form-label">Email</label>
+                                              <div class="col-sm-15 bg-light p-2 border">
+                                                {{ $data->email }}
                                               </div>
-                                              <label for="basic-url" class="form-label">Bio</label>
-                                                <textarea class="form-control" placeholder="your bio" id="bio" >isi bio</textarea>
                                               </div>
-                                              </div>
-                                              <div class="row">
-                                              <div class="col">
-                                              <label for="basic-url" class="form-label">Nama Pengguna</label>
-                                              <div class="input-group mb-3">
-                                                <span class="input-group-text" id="addon-wrapping">@</span>
-                                                <input type="text" class="form-control" placeholder="username" value="username" aria-label="username" aria-describedby="button-addon2">
-                                              </div>
-                                              <label for="basic-url" class="form-label">Sandi Lama</label>
-                                              <div class="input-group mb-3">
-                                                <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="button-addon2">
-                                                
-                                              </div>
-                        
+                                              </div><br>
                                               
-                                              </div>
-                        
-                                              <div class="col">
-                                              <label for="basic-url" class="form-label">E-mail</label>
-                                              <div class="input-group mb-3">
-                                                <input type="text" class="form-control" placeholder="e-mail" value="email@gmail.com" aria-label="email" aria-describedby="button-addon2">
-                                              </div>
-                                              <label for="basic-url" class="form-label">Sandi Baru</label>
-                                              <div class="input-group mb-3">
-                                                <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="button-addon2">
-                                              </div>
-                                              </div>
-                                              </div >
-                                              <button class="btn btn-success">Ubah</button>
+                                              @endforeach
                                             </form>
                                             </div>
                                             <!-- Container-fluid -->
@@ -446,6 +391,7 @@
                         </div>
                         <!-- End Row -->
                     </div>
+                    <!-- End Page-content-Wrapper -->
                 </div>
 
             </div>

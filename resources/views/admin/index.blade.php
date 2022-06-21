@@ -80,7 +80,6 @@
                     <span>Data Perusahaan</span>
                 </a>
             </li>
-
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
@@ -96,24 +95,6 @@
                     </div>
                 </div>
             </li>
-
-            <!-- Nav Item - One Collapse Menu -->
-            <li class="nav-item ">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    <i class="fas fa-archive"></i>
-                    <span>Absensi</span>
-                </a>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Data Absensi :</h6>
-                        <a class="collapse-item " href="{{ url('absensi') }}">Absensi</a>
-                        <a class="collapse-item" href="{{ url('rekapabsen') }}">Rekap Absen</a>
-                    </div>
-                </div>
-            </li>
-
             <!-- Nav Item - One Collapse Menu -->
             <li class="nav-item ">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIzin" aria-expanded="true"
@@ -384,7 +365,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="datakelas.html">
                                                 Jumlah Kelas</a></div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">2</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $kelas }}</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-school fa-2x text-gray-300"></i>
@@ -402,7 +383,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1"><a href="dataperusahaan.html">
                                                 Jumlah Perusahaan</a></div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">2</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $perusahaan }}</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-city fa-2x text-gray-300"></i>
@@ -418,19 +399,13 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Yang Isi Jurnal
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Jumlah Jurnal Masuk
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">80%</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{$jurnal}}</div>
                                                 </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <div class="col-auto">
@@ -448,8 +423,8 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Yang Izin</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
+                                                Jumlah Siswa</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $siswa }}</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-comments fa-2x text-gray-300"></i>

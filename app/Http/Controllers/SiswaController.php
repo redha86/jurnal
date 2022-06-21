@@ -29,7 +29,8 @@ class SiswaController extends Controller
     {
         $jurnal = DB::table('jurnal')->where('nama_siswa', auth::user()->name)->count();
         $izin = DB::table('izin')->where('id_user', auth::user()->id)->count();
-        return view('tampilan.index', compact('jurnal', 'izin'));
+        $tanggal = DB::table('perusahaan')->where('tanggal_awal', 'tanggal_akhir', auth::user()->name)->get();
+        return view('tampilan.index', compact('jurnal', 'izin', 'tanggal'));
     }
     public function absen()
     {

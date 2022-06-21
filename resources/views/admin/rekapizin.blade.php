@@ -78,21 +78,11 @@
             
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="{{ url('perusahaan') }}">
                     <i class="fas fa-city "></i>
                     <span>Data Perusahaan</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Pilih Perusahaan:</h6>
-                        <a class="collapse-item" href="{{ url('hummasoft') }}">HUMMASOFT</a>
-                        <a class="collapse-item" href="{{ url('axelbit') }}">AXELBIT</a> 
-                    </div>
-                </div>
             </li>
-
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
@@ -105,23 +95,6 @@
                         <h6 class="collapse-header">Tambah Data</h6>
                         <a class="collapse-item" href="{{ url('datakelas') }}">Tambah Kelas</a>
                         <a class="collapse-item" href="{{ url('dataperusahaan') }}">Tambah Perusahaan</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - One Collapse Menu -->
-            <li class="nav-item ">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    <i class="fas fa-archive"></i>
-                    <span>Absensi</span>
-                </a>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Data Absensi :</h6>
-                        <a class="collapse-item " href="{{ url('absensi') }}">Absensi</a>
-                        <a class="collapse-item " href="{{ url('rekapabsen') }}">Rekap Absen</a>
                     </div>
                 </div>
             </li>

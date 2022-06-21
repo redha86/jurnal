@@ -60,21 +60,11 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item ">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>ABSENSI / JURNAL</span>
-                </a>
-                <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Menu :</h6>
-                        <a class="collapse-item" href="{{ url('absen') }}">ABSENSI HARIAN</a>
-                        <a class="collapse-item " href="{{ url('jurnal') }}">JURNAL HARIAN</a>
-                    </div>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('jurnal') }}">
+                    <i class="fas fa-book"></i>
+                    <span>JURNAL</span></a>
             </li>
-
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('izin') }}">
